@@ -50,11 +50,7 @@ public class Main {
                     fileOut.println("</body>");
                     fileOut.println("</html>");
                     System.out.println("HTML file is processed");
-                    try {
-                        sleep(3000);
-                    } catch (InterruptedException e) {
-                        throw new RuntimeException(e);
-                    }
+                    try {sleep(3000);} catch (InterruptedException e) {throw new RuntimeException(e);}
                     fileIn.close();
                     fileOut.close();
                 }
